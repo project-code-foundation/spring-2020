@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Oliver Ni">
+  <meta name="dcterms.date" content="2020-04-06">
+  <title>Web Design</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../reveal.js/css/reset.css">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Web Design</h1>
+  <p class="author">Oliver Ni</p>
+  <p class="date">April 6, 2020</p>
+</section>
+
+<section id="why-learn-to-make-a-website" class="slide level2">
+<h2>Why learn to make a website?</h2>
+<ul>
+<li class="fragment">1.7 billion websites</li>
+<li class="fragment">Create cool stuff</li>
+<li class="fragment">Earn some money</li>
+<li class="fragment">Great introduction to coding</li>
+</ul>
+</section>
+<section id="what-are-websites-made-out-of" class="slide level2">
+<h2>What are websites made out of?</h2>
+<ul>
+<li class="fragment">HTML (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage)
+<ul>
+<li class="fragment">Content</li>
+</ul></li>
+<li class="fragment">CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets)
+<ul>
+<li class="fragment">Styling</li>
+</ul></li>
+<li class="fragment">JavaScript
+<ul>
+<li class="fragment">Interactivity</li>
+</ul></li>
+</ul>
+</section>
+<section id="html-basics" class="slide level2">
+<h2>HTML basics</h2>
+<ul>
+<li class="fragment">Tags: <code>&lt;div&gt;&lt;/div&gt;</code>
+<ul>
+<li class="fragment">Angle brackets</li>
+<li class="fragment"><code>/</code> means end tag</li>
+</ul></li>
+<li class="fragment">Tags make up elements</li>
+<li class="fragment">Elements make up page</li>
+<li class="fragment">You can nest elements!</li>
+</ul>
+</section>
+<section id="structure-of-an-html-file" class="slide level2">
+<h2>Structure of an HTML file</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">&lt;html&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="kw">&lt;head&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>        <span class="kw">&lt;title&gt;</span>Website Title<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>    <span class="kw">&lt;/head&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="kw">&lt;body&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>        Website Content</span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="kw">&lt;/html&gt;</span></span></code></pre></div>
+</section>
+<section id="structure-of-an-html-file-1" class="slide level2">
+<h2>Structure of an HTML file</h2>
+<ul>
+<li class="fragment"><strong>Doctype:</strong> let the browser know it’s modern HTML</li>
+<li class="fragment"><strong>Head:</strong> contains information about the page, but the user doesn’t see it</li>
+<li class="fragment"><strong>Body:</strong> the actual content of the page</li>
+</ul>
+</section>
+<section id="basic-elements" class="slide level2">
+<h2>Basic elements</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;h1&gt;</span>This is a heading!<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">&lt;p&gt;</span>This is a paragraph.<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="co">&lt;!-- This is a comment. --&gt;</span></span></code></pre></div>
+</section>
+<section id="activity-time" class="slide level2">
+<h2>Activity time!</h2>
+<ul>
+<li class="fragment">Open http://repl.it/languages/html</li>
+<li class="fragment">Delete everything so far
+<ul>
+<li class="fragment">Lots of things we haven’t done yet!</li>
+</ul></li>
+<li class="fragment">Make an example website for yourself</li>
+</ul>
+<p><img data-src="activity_1.png" height="150" /></p>
+</section>
+<section id="line-breaks" class="slide level2">
+<h2>Line breaks</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">&lt;p&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>    Roses are red,</span>
+<span id="cb3-3"><a href="#cb3-3"></a>    violets are blue.</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    My lines aren&#39;t breaking,</span>
+<span id="cb3-5"><a href="#cb3-5"></a>    and I&#39;m confused!</span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="kw">&lt;/p&gt;</span></span></code></pre></div>
+<p><img data-src="no_line_breaks.png" height="50" /></p>
+<ul>
+<li class="fragment">HTML ignores extra whitespace</li>
+<li class="fragment">Use the <code>&lt;br&gt;</code> tag to make new lines</li>
+</ul>
+</section>
+<section id="line-breaks-1" class="slide level2">
+<h2>Line breaks</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">&lt;p&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>    Roses are red, <span class="kw">&lt;br&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>    violets are blue. <span class="kw">&lt;br&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>    My lines are breaking, <span class="kw">&lt;br&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>    and I&#39;m happy but can&#39;t come up with more rhymes...</span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="kw">&lt;/p&gt;</span></span></code></pre></div>
+<p><img data-src="with_line_breaks.png" height="200" /></p>
+</section>
+<section id="more-headings" class="slide level2">
+<h2>More headings</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">&lt;h1&gt;</span>This is a very big heading!<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">&lt;h2&gt;</span>This is a big heading!<span class="kw">&lt;/h2&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">&lt;h3&gt;</span>This is a medium heading!<span class="kw">&lt;/h3&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="kw">&lt;h4&gt;</span>This is a small heading!<span class="kw">&lt;/h4&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="kw">&lt;h5&gt;</span>This is a tiny heading!<span class="kw">&lt;/h5&gt;</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="kw">&lt;h6&gt;</span>This is almost not a heading!<span class="kw">&lt;/h6&gt;</span></span></code></pre></div>
+</div><div class="column" style="width:35%;">
+<p><img data-src="heading_sizes.png" width="300" /></p>
+</div>
+</div>
+</section>
+<section id="fun-with-tags" class="slide level2">
+<h2>Fun with tags</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">&lt;p&gt;</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>    Look, I can <span class="kw">&lt;b&gt;</span>bold<span class="kw">&lt;/b&gt;</span> text, <span class="kw">&lt;i&gt;</span>italicize<span class="kw">&lt;/i&gt;</span> text,</span>
+<span id="cb6-3"><a href="#cb6-3"></a>    and even <span class="kw">&lt;u&gt;</span>underline<span class="kw">&lt;/u&gt;</span> text!</span>
+<span id="cb6-4"><a href="#cb6-4"></a>    I can also put <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://example.com&quot;</span><span class="kw">&gt;</span>links<span class="kw">&lt;/a&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>    to other websites!</span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="kw">&lt;/p&gt;</span></span></code></pre></div>
+<p><img data-src="fun_with_tags.png" height="100" /></p>
+</section>
+<section id="attributes" class="slide level2">
+<h2>Attributes</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1"></a>This is a <span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;https://example.com&quot;</span><span class="kw">&gt;</span>link<span class="kw">&lt;/a&gt;</span>.</span></code></pre></div>
+<ul>
+<li class="fragment">Inside the start tag</li>
+<li class="fragment">Provide additional information</li>
+<li class="fragment"><code>href</code> means <strong>H</strong>ypertext <strong>REF</strong>erence (but that’s not important)</li>
+</ul>
+</section>
+<section id="images" class="slide level2">
+<h2>Images</h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">&lt;img</span><span class="ot"> src=</span><span class="st">&quot;https://project-code.org/static/pcf.png&quot;</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="ot">     width=</span><span class="st">&quot;200px&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
+<div class="columns">
+<div class="column">
+<ul>
+<li class="fragment">Display images!</li>
+<li class="fragment"><code>src</code>: URL to the image file</li>
+<li class="fragment"><code>width</code>: Width (pixels)</li>
+<li class="fragment"><code>height</code>: Height (pixels)</li>
+</ul>
+</div><div class="column">
+<p><img data-src="width_height.jpg" width="300" /></p>
+</div>
+</div>
+</section>
+<section id="project-celebrity-website" class="slide level2">
+<h2>Project: Celebrity Website</h2>
+<ul>
+<li class="fragment">Pick a famous person</li>
+<li class="fragment">Make a simple website!</li>
+<li class="fragment">Add text, pictures</li>
+<li class="fragment">Have fun</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
