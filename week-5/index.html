@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Oliver Ni">
+  <meta name="dcterms.date" content="2020-05-04">
+  <title>Web Design 5</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../reveal.js/css/reset.css">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Web Design 5</h1>
+  <p class="author">Oliver Ni</p>
+  <p class="date">May 4, 2020</p>
+</section>
+
+<section id="week-4-recap-finish-forms" class="slide level2">
+<h2>Week 4 Recap &amp; Finish forms</h2>
+</section>
+<section class="slide level2">
+
+</section>
+<section>
+<section id="clientserver-stuff-and-the-web" class="title-slide slide level1">
+<h1>Client/server stuff and the web</h1>
+
+</section>
+<section id="what-happens-when-i-visit-a-webpage" class="slide level2">
+<h2>What happens when I visit a webpage?</h2>
+<p><img data-src="clientserver5.gif" /></p>
+</section>
+<section id="parts-of-a-website" class="slide level2">
+<h2>Parts of a website</h2>
+<ul>
+<li class="fragment">Client (browser rendering website)
+<ul>
+<li class="fragment"><em>frontend</em></li>
+</ul></li>
+<li class="fragment">Server (retrieves from database, communicates with client)
+<ul>
+<li class="fragment"><em>backend</em></li>
+</ul></li>
+<li class="fragment">Database (stores information)</li>
+</ul>
+</section>
+<section id="client-vs-server" class="slide level2">
+<h2>Client vs Server</h2>
+<p><img data-src="clientserver4.gif" /></p>
+</section>
+<section id="client-vs-server-1" class="slide level2">
+<h2>Client vs Server</h2>
+<p><img data-src="clientserverscriptschart.jpg" /></p>
+</section>
+<section id="client-vs-server-2" class="slide level2">
+<h2>Client vs Server</h2>
+<ul>
+<li class="fragment">HTML/CSS/JS for client</li>
+<li class="fragment">Many different languages for server</li>
+<li class="fragment">We are writing client-side code</li>
+</ul>
+</section>
+<section id="server-side-languages" class="slide level2">
+<h2>Server-side languages</h2>
+<p><img data-src="backendlanguages.jpg" /></p>
+</section>
+<section id="different-types-of-requests" class="slide level2">
+<h2>Different types of requests</h2>
+<p><img data-src="getpost.jpeg" /></p>
+</section>
+<section id="how-do-forms-work" class="slide level2">
+<h2>How do forms work?</h2>
+<p><img data-src="diagram.png" /></p>
+</section>
+<section id="form-code" class="slide level2">
+<h2>Form code</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">&lt;form</span><span class="ot"> action=</span><span class="st">&quot;/submitform.php&quot;</span><span class="ot"> method=</span><span class="st">&quot;post&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="kw">&lt;label</span><span class="ot"> for=</span><span class="st">&quot;fname&quot;</span><span class="kw">&gt;</span>First name:<span class="kw">&lt;/label&gt;&lt;br&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;text&quot;</span><span class="ot"> id=</span><span class="st">&quot;fname&quot;</span><span class="ot"> name=</span><span class="st">&quot;fname&quot;</span><span class="kw">&gt;&lt;br&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="kw">&lt;label</span><span class="ot"> for=</span><span class="st">&quot;lname&quot;</span><span class="kw">&gt;</span>Last name:<span class="kw">&lt;/label&gt;&lt;br&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;text&quot;</span><span class="ot"> id=</span><span class="st">&quot;lname&quot;</span><span class="ot"> name=</span><span class="st">&quot;lname&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="kw">&lt;/form&gt;</span></span></code></pre></div>
+<ul>
+<li class="fragment">Form will make a request on submit</li>
+<li class="fragment"><code>action</code> specifies where to send the request</li>
+<li class="fragment"><code>method</code> for which http method</li>
+<li class="fragment"><code>name</code> specifies key-value pairs</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
